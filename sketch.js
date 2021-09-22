@@ -111,18 +111,18 @@ function draw() {
 // }
 
 
-function keyPressed() {
-  if(keyCode === 32){
-    // create an arrow object and add into an array ; set its angle same as angle of playerArcher
-    var posX = playerArcher.body.position.x;
-    var posY = playerArcher.body.position.y;
-    var angle = playerArcher.body.angle+PI/2;
-    var arrow = new PlayerArrow(posX, posY, 100, 10);
-    arrow.trajectory = [];
-    Matter.Body.setAngle(arrow.body, angle);
-    playerArrows.push(arrow);
-  }
-}
+// function keyPressed() {
+//   if(keyCode === 32){
+//     // create an arrow object and add into an array ; set its angle same as angle of playerArcher
+//     var posX = playerArcher.body.position.x;
+//     var posY = playerArcher.body.position.y;
+//     var angle = playerArcher.body.angle+PI/2;
+//     var arrow = new PlayerArrow(posX, posY, 100, 10);
+//     arrow.trajectory = [];
+//     Matter.Body.setAngle(arrow.body, angle);
+//     playerArrows.push(arrow);
+//   }
+// }
 
 
 // function keyPressed() {
